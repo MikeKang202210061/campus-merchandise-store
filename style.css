@@ -1,0 +1,114 @@
+body{margin:0;font-family:Arial,sans-serif}
+header{background:gray;color:#000;text-align:center;font-size:36px;font-weight:700;padding:20px 0}
+nav{background:#add8e6;padding:5px 0 5px 20px}
+nav a{color:purple;text-decoration:none;margin:0 15px;font-size:18px}
+nav a:hover{color:red}
+.page-main{background:#fff8dc;min-height:500px;padding:20px;border:1px solid #ccc;text-align:center}
+
+/* Purchase confirmation / receipt styles */
+.confirmation {
+    background-color: #e8f5e9;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+}
+.confirmation h2 { color: #2e7d32; }
+
+.warning {
+    background-color: #fff3cd;
+    border: 2px solid #ff9800;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+}
+.warning h2 { color: #e65100; }
+
+table.receipt {
+    width: 70%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+table.receipt th,
+table.receipt td {
+    border: 1px solid #999;
+    padding: 8px 12px;
+    text-align: left;
+}
+table.receipt th {
+    background-color: #add8e6;
+}
+table.receipt tr.total-row td {
+    background-color: #fffacd;
+    font-size: 1.1em;
+}
+
+/* Data table (clothes / necessities / ornaments) */
+table.data-table { width: 80%; margin: 0 auto 20px; border-collapse: collapse; }
+table.data-table td { background-color: #fff8dc; border: 2px solid #000; padding: 10px; text-align: center; }
+table.data-table th { background-color: #333; color: #fff; border: 2px solid #000; padding: 10px; text-align: center; }
+table.data-table tr:nth-child(even) td { background-color: #fff8dc; }
+table.data-table img { width: 100px; height: auto; }
+
+/* User status bar */
+.user-status { padding: 8px 14px; margin-bottom: 16px; border-radius: 4px; font-size: 15px; font-weight: bold; }
+.user-status.logged-in  { color: green; }
+.user-status.not-logged-in { color: #c00; }
+
+/* Form buttons */
+.form-actions, .submit-wrap { text-align: center; margin: 16px 0; }
+input[type="number"] { width: 65px; padding: 4px; text-align: center; }
+.btn-submit, .btn-reset,
+.submit-wrap input[type="submit"] { padding: 10px 32px; background-color: #333; color: #fff; border: none; border-radius: 4px; font-size: 15px; cursor: pointer; }
+.btn-submit:hover, .btn-reset:hover,
+.submit-wrap input[type="submit"]:hover { background-color: #555; }
+
+/* Login page layout */
+div.dgray{
+    height: 50px;
+    width: 100%;
+    z-index:2;
+    font-size:30px;
+    text-align:center;
+    background:gray;
+    position:relative;
+    font-family:"Times New Roman";
+ }
+ div.blue{
+    top:50px;
+    height: 40px;
+    width: 100%;
+    z-index:3;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    background:lightblue;
+    font-size:20px;
+    color:blue;
+    font-family:serif;
+    position:absolute;
+ }
+ div.gray{
+    top:90px;
+    height: 660px;
+    width:340px;
+    left:0px;
+    z-index:2;
+    position:absolute;
+    text-align:center;
+    border: 1px dashed;
+    background:lightgray;
+    font-size:20px;
+ }
+ div.brown{
+    top:90px;
+    height: 660px;
+    width:calc(100% - 340px);
+    left:340px;
+    z-index:2;
+    border: 1px dashed;
+    position:absolute;
+    background:rgb(251, 244, 149);
+    text-align:left;
+    font-size:20px;
+ }
