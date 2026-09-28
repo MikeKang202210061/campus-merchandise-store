@@ -1,8 +1,8 @@
 <?php
-// necessities.php - Necessities Page
+// neces.php - Necessities Page
 session_start();
-include 'database.php';
-include 'catalog.php';
+include 'connectDB.php';
+include 'priceNameStructure.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +20,7 @@ include 'catalog.php';
         <div class="page-main">
             <h1>Necessities</h1>
 
-            <form method="post" action="checkout.php" id="orderForm">
+            <form method="post" action="process_purchase.php" id="orderForm">
                 <input type="hidden" name="category" value="neces">
 
                 <table class="data-table">

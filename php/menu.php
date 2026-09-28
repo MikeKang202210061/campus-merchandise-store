@@ -6,6 +6,6 @@
 <nav>
     <a href="login.php">Login/Register</a>
     <a href="clothes.php">Clothes</a>
-    <a href="necessities.php">Necessities</a>
-    <a href="ornaments.php">Ornaments</a>
+    <a href="neces.php">Necessities</a>
+    <a href="orna.php">Ornaments</a>
 </nav>

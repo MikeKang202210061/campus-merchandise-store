@@ -3,7 +3,7 @@ session_start();
 
 $loggedIn = isset($_SESSION['username']);
 
-// Messages passed back via redirect from authenticate.php / register.php
+// Messages passed back via redirect from login_check.php / register.php
 $loginError    = isset($_GET['login_err'])    ? $_GET['login_err']    : '';
 $registerError = isset($_GET['register_err']) ? $_GET['register_err'] : '';
 $registerOk    = isset($_GET['register_ok'])  ? $_GET['register_ok']  : '';
@@ -25,8 +25,8 @@ $registerOk    = isset($_GET['register_ok'])  ? $_GET['register_ok']  : '';
     <div class="blue">
         &nbsp;<a href="login.php">Login/Register</a> &nbsp;
         <a href="clothes.php">Clothes</a> &nbsp;
-        <a href="necessities.php">Necessities</a> &nbsp;
-        <a href="ornaments.php">Ornaments</a>
+        <a href="neces.php">Necessities</a> &nbsp;
+        <a href="orna.php">Ornaments</a>
     </div>
 
     <?php if ($loggedIn): ?>
@@ -37,8 +37,8 @@ $registerOk    = isset($_GET['register_ok'])  ? $_GET['register_ok']  : '';
             <p>You are already logged in.</p>
             <p>
                 <a href="clothes.php">Clothes</a> |
-                <a href="necessities.php">Necessities</a> |
-                <a href="ornaments.php">Ornaments</a> |
+                <a href="neces.php">Necessities</a> |
+                <a href="orna.php">Ornaments</a> |
                 <a href="logout.php">Logout</a>
             </p>
         </div>
@@ -56,7 +56,7 @@ $registerOk    = isset($_GET['register_ok'])  ? $_GET['register_ok']  : '';
                 <p style="color:green;"><?php echo htmlspecialchars($registerOk); ?></p>
             <?php endif; ?>
 
-            <form action="authenticate.php" method="POST">
+            <form action="login_check.php" method="POST">
                 <p><input type="text"     name="username" placeholder="Username" required></p>
                 <p><input type="password" name="password" placeholder="Password" required></p>
                 <p><input type="submit" value="Submit"></p>

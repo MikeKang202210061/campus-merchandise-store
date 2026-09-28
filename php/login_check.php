@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "database.php";
+include "connectDB.php";
 
 $user = trim($_POST['username'] ?? '');
 $pwd  = $_POST['password'] ?? '';

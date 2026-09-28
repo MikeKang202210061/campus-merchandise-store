@@ -1,4 +1,4 @@
-# Campus Commerce Web Platform
+# Campus Merchandise Store
 
 A full-stack course project for browsing and managing campus merchandise. The application uses PHP for server-side logic, MySQL for persistence, and HTML/CSS for the interface.
 

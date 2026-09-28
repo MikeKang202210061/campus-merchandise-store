@@ -1,13 +1,13 @@
 <?php
-// checkout.php
+// process_purchase.php
 // mid, category, itemN, price, quantity
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 session_start();
-require 'database.php';
-include 'catalog.php';
+require 'connectDB.php';
+include 'priceNameStructure.php';
 ?>
 <!DOCTYPE html>
 <html>
